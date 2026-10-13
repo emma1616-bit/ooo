@@ -57,7 +57,7 @@
 
   /* ============ Utility type ============ */
   .eyebrow{
-    font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+    font-size:14px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
     color:var(--ink-soft);display:flex;align-items:center;gap:14px;
   }
   .eyebrow::before{content:"";width:34px;height:1px;background:var(--accent)}
@@ -70,12 +70,12 @@
 
   /* ============ Notice bar ============ */
   .notice{
-    background:var(--ink);color:#EFE9DB;font-size:12px;letter-spacing:.02em;
+    background:var(--ink);color:#EFE9DB;font-size:13.5px;letter-spacing:.02em;
     text-align:center;padding:8px 16px;
   }
   .notice b{color:var(--accent-3);font-weight:600}
   .notice button{
-    background:none;border:none;color:#EFE9DB;cursor:pointer;font-size:12px;
+    background:none;border:none;color:#EFE9DB;cursor:pointer;font-size:13.5px;
     margin-left:12px;text-decoration:underline;opacity:.7;font-family:var(--sans);
   }
 
@@ -93,7 +93,7 @@
   .logo em{font-style:italic;font-weight:400;color:var(--accent)}
   .nav-links{display:flex;gap:30px;list-style:none}
   .nav-links a{
-    text-decoration:none;font-size:12.5px;font-weight:600;letter-spacing:.12em;
+    text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.12em;
     text-transform:uppercase;color:var(--ink-soft);transition:color .2s;
   }
   .nav-links a:hover{color:var(--accent)}
@@ -128,7 +128,7 @@
   .shiny-text{display:inline-block}
   .hero-cta{margin-top:36px;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
   .btn{
-    display:inline-block;text-decoration:none;font-size:13px;font-weight:600;
+    display:inline-block;text-decoration:none;font-size:14.5px;font-weight:600;
     letter-spacing:.1em;text-transform:uppercase;padding:13px 26px;border-radius:99px;
     transition:transform .2s, box-shadow .2s;
   }
@@ -137,7 +137,7 @@
   .btn-ghost{color:var(--ink);border:1px solid var(--line)}
   .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
   .pub-link{margin-top:24px;padding-top:20px;border-top:1px dashed var(--line);display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-  .pub-link .hand{font-size:17px;color:var(--accent)}
+  .pub-link .hand{font-size:19px;color:var(--accent)}
   .hero-note{margin-top:34px}
   #tpNote{font-family:'Roboto Flex',var(--sans);font-size:clamp(19px,2.2vw,24px);color:var(--ink-soft);letter-spacing:.02em;white-space:nowrap;min-height:1.3em}
   #tpNote span{display:inline-block;will-change:font-variation-settings}
@@ -155,10 +155,10 @@
   }
   .frag-eeg{top:0;left:4%;width:330px;transform:rotate(-2.5deg);z-index:3}
   .frag-eeg .card{padding:16px 16px 10px}
-  .eeg-head{display:flex;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:.14em;color:var(--ink-soft);text-transform:uppercase;margin-bottom:6px}
+  .eeg-head{display:flex;justify-content:space-between;font-size:14.5px;font-weight:700;letter-spacing:.14em;color:var(--ink-soft);text-transform:uppercase;margin-bottom:6px}
   .frag-painting{top:120px;right:0;width:250px;transform:rotate(2.5deg);z-index:2}
   .frag-painting img{width:100%;height:250px;object-fit:cover}
-  .frag-painting figcaption{font-size:11px;color:var(--ink-soft);padding:9px 12px;font-family:var(--serif);font-style:italic}
+  .frag-painting figcaption{font-size:14px;color:var(--ink-soft);padding:9px 12px;font-family:var(--serif);font-style:italic}
   .frag-podcast{bottom:6px;left:0;width:300px;transform:rotate(-1.5deg);z-index:4}
   .frag-podcast .card{padding:15px 16px}
   .frag-note{
@@ -168,7 +168,7 @@
   .frag-note .arrow{color:var(--accent);font-size:26px}
   .frag-run{bottom:-24px;right:9%;width:230px;transform:rotate(2deg);z-index:5}
   .frag-run .card{padding:13px 15px}
-  .frag-run .rr{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:4px}
+  .frag-run .rr{font-size:14.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:4px}
   .frag-run .rr b{color:var(--accent);font-size:14px;letter-spacing:0}
   /* hover grow for collage cards */
   .collage .card{transition:transform .35s cubic-bezier(.2,.7,.3,1)}
@@ -224,7 +224,7 @@
     font-family:var(--serif);font-weight:500;font-size:clamp(30px,3.6vw,44px);
     letter-spacing:-.01em;line-height:1.15;
   }
-  .sec-kicker{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}
+  .sec-kicker{font-size:13.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:8px}
   .sec-sub{max-width:560px;color:var(--ink-soft);font-size:16px;margin-top:14px}
   /* ShinyText — React Bits 原生移植：researchSub 副标题金属扫光（background-clip:text 渐变光带，无 React）；字体与 .sec-title 一致（serif），字号放大 */
   #researchSub{display:block;max-width:800px;margin:18px auto 0;
@@ -233,6 +233,10 @@
   /* Ways I See 副标题：艺术字斜体（Fraunces italic），比 .sec-title 略小 */
   #artSub{max-width:760px;font-family:var(--serif);font-style:italic;font-weight:400;
     font-size:clamp(19px,2.5vw,28px);letter-spacing:.01em;line-height:1.45;margin-top:16px}
+  #artSub .hl-coral{color:var(--accent)}
+  #artSub .hl-cobalt{color:var(--accent-2)}
+  .hl-coral{color:var(--accent)}
+  .hl-cobalt{color:var(--accent-2)}
   .shiny-text{position:relative;background-repeat:no-repeat;background-size:100% 100%;
     -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .shiny-text__glow{position:absolute;inset:0;background-repeat:no-repeat;background-size:100% 100%;
@@ -259,7 +263,7 @@
   .about-photo .card{position:relative;transform:rotate(2deg);transition:transform .35s cubic-bezier(.2,.7,.3,1)}
   .about-photo:hover .card{transform:rotate(2deg) scale(1.05)}
   .about-photo img{width:100%;display:block}
-  .about-photo figcaption{font-size:11px;color:var(--ink-soft);padding:9px 12px;font-family:var(--serif);font-style:italic}
+  .about-photo figcaption{font-size:14px;color:var(--ink-soft);padding:9px 12px;font-family:var(--serif);font-style:italic}
   .about-right p{font-size:18px;line-height:1.85;max-width:640px}
   .about-right p + p{margin-top:22px}
   .about-right .big{
@@ -268,7 +272,7 @@
   .about-right .big em{font-style:italic;color:var(--accent-2)}
   .keywords{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
   .kw{
-    font-size:12px;font-weight:600;letter-spacing:.06em;padding:7px 15px;border-radius:99px;
+    font-size:13.5px;font-weight:600;letter-spacing:.06em;padding:7px 15px;border-radius:99px;
     border:1px solid var(--line);color:var(--ink-soft);background:var(--paper-2);
   }
   .kw.hot{border-color:var(--accent);color:var(--accent)}
@@ -303,13 +307,20 @@
   .p01{position:relative}
   .p01-candle{position:absolute;right:26px;bottom:12px;width:185px;opacity:.15;pointer-events:none;z-index:0}
   .p01 .p-text,.p01 .p-visual{position:relative;z-index:1}
+  /* P01 左下手绘小蜡烛组：火焰轻晃动画，呼应「点蜡烛」注意力训练 */
+  .candle-row{position:absolute;left:4px;bottom:4px;display:flex;align-items:flex-end;gap:9px;
+    pointer-events:none;z-index:0;opacity:.22}
+  .candle-row .fl{transform-box:fill-box;transform-origin:50% 88%;animation:flick 1.7s ease-in-out infinite}
+  .candle-row .fl.b{animation-duration:1.2s;animation-delay:.4s}
+  .candle-row .fl.c{animation-duration:2.1s;animation-delay:.9s}
+  @keyframes flick{0%,100%{transform:scale(1) rotate(-2deg)}50%{transform:scale(1.1) rotate(2.5deg)}}
   /* four editorial illustrations under P03 */
   .p-ills{grid-column:1/-1;margin-top:40px;padding-top:30px;border-top:1px dashed var(--line)}
   .p-ills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
   .p-ills-grid figure{margin:0}
   .p-ills-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:12px;
     border:1px solid var(--line);background:var(--paper)}
-  .p-ills-grid figcaption{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  .p-ills-grid figcaption{font-size:14.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
     color:var(--ink-soft);margin-top:9px;line-height:1.5}
   @media(max-width:1150px){.p-ills-grid{grid-template-columns:repeat(2,1fr);gap:22px}}
   @media(max-width:560px){.p-ills-grid{grid-template-columns:1fr}}
@@ -357,7 +368,7 @@
   @media(prefers-reduced-motion:reduce){.p-ills-grid .flip-card,.p-ills-grid .flip-card__rotor,
     .p-ills-grid .flip-card__shadow,.p-ills-grid .flip-card__glare,.p-ills-grid .fc-hint{transition:none}}
   .p-tag{
-    display:inline-block;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    display:inline-block;font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
     padding:6px 13px;border-radius:99px;margin-bottom:18px;
   }
   .tag-red{background:rgba(224,71,43,.1);color:var(--accent)}
@@ -367,7 +378,7 @@
     font-family:var(--serif);font-weight:500;font-size:clamp(26px,3vw,36px);
     line-height:1.2;margin-bottom:6px;letter-spacing:-.01em;
   }
-  .p-meta{font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:20px}
+  .p-meta{font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:20px}
   .p-meta b{color:var(--ink)}
   /* TrueFocus strip — framed words under the P03 heading */
   .tf-strip{
@@ -405,7 +416,7 @@
   .visual-pad{padding:20px}
   .p-figure{position:relative}
   .p-figure .fig-label{
-    font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
+    font-size:14.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);
     display:flex;justify-content:space-between;margin-bottom:12px;
   }
   .p-figure .fig-label i{font-style:normal;color:var(--accent)}
@@ -414,19 +425,19 @@
   .lab-photo img, .lab-strip img{border:1px solid var(--line);background:#fff;padding:5px;border-radius:calc(var(--radius) + 2px)}
   .lab-photo img{width:100%;height:300px;object-fit:cover}
   .lab-photo figcaption{
-    font-family:var(--serif);font-style:italic;font-size:12.5px;color:var(--ink-soft);
+    font-family:var(--serif);font-style:italic;font-size:14px;color:var(--ink-soft);
     margin-top:12px;padding:2px 0 2px 10px;border-left:2px solid var(--line);
   }
   .lab-strip{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
   .lab-strip img{width:100%;height:150px;object-fit:cover}
   .lab-strip figcaption{
-    font-family:var(--serif);font-style:italic;font-size:12px;color:var(--ink-soft);
+    font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--ink-soft);
     margin-top:9px;line-height:1.5;padding:2px 0 2px 10px;border-left:2px solid var(--line);
   }
   @media(max-width:560px){.lab-strip{grid-template-columns:1fr}.lab-photo img{height:220px}}
   .result-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
   .chip{
-    font-size:11.5px;font-weight:600;letter-spacing:.04em;padding:6px 13px;border-radius:99px;
+    font-size:14.5px;font-weight:600;letter-spacing:.04em;padding:6px 13px;border-radius:99px;
     background:var(--paper-3);color:var(--ink);
   }
   @media(max-width:900px){
@@ -439,11 +450,11 @@
   .pipe{display:flex;flex-direction:column;gap:0;margin-top:6px}
   .pipe-step{
     display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid var(--line);
-    background:var(--paper-2);font-size:13px;
+    background:var(--paper-2);font-size:14.5px;
   }
   .pipe-step b{font-weight:600}
   .pipe-step .stepn{
-    font-family:var(--serif);font-style:italic;color:var(--accent);font-size:13px;min-width:24px;
+    font-family:var(--serif);font-style:italic;color:var(--accent);font-size:14.5px;min-width:24px;
   }
   .pipe-step.out{background:var(--ink);color:var(--paper-2);border-color:var(--ink)}
   .pipe-step.out .stepn{color:var(--accent-3)}
@@ -451,7 +462,7 @@
   .paper-stamp{
     margin-top:16px;display:flex;align-items:center;justify-content:space-between;
     border:1.5px dashed var(--accent-2);border-radius:6px;padding:10px 16px;
-    font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--accent-2);
+    font-size:13.5px;font-weight:600;letter-spacing:.06em;color:var(--accent-2);
   }
   .paper-stamp s{text-decoration-color:rgba(44,73,199,.5)}
   .paper-link{margin-top:10px;display:flex;align-items:center;gap:12px;background:var(--paper);
@@ -459,16 +470,16 @@
     transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease,border-color .35s ease}
   .paper-link svg{width:27px;height:27px;flex:none;color:var(--accent-2)}
   .paper-link .pl-t{display:flex;flex-direction:column;gap:2px;line-height:1.25}
-  .paper-link .pl-t b{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:13px;letter-spacing:.02em;color:var(--ink)}
-  .paper-link .pl-t i{font-style:normal;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft)}
+  .paper-link .pl-t b{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:14.5px;letter-spacing:.02em;color:var(--ink)}
+  .paper-link .pl-t i{font-style:normal;font-size:13.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft)}
   .paper-link .pl-arrow{margin-left:auto;font-size:15px;color:var(--accent);transition:transform .35s cubic-bezier(.22,1,.36,1)}
   .paper-link:hover{transform:translateY(-2px);border-color:var(--accent-2);box-shadow:0 10px 22px -14px rgba(44,73,199,.4)}
   .paper-link:hover .pl-arrow{transform:translate(2px,-2px)}
   @media(prefers-reduced-motion:reduce){.paper-link{transition:none}.paper-link .pl-arrow{transition:none}}
-  .pipe-step .pipe-d{display:block;font-size:11px;color:var(--ink-soft);margin-top:3px;font-weight:400;line-height:1.5}
+  .pipe-step .pipe-d{display:block;font-size:14px;color:var(--ink-soft);margin-top:3px;font-weight:400;line-height:1.5}
   .pipe-step.out .pipe-d{color:rgba(246,242,233,.62)}
   .tpl-strip{margin-top:18px;padding:12px 14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius)}
-  .tpl-key{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  .tpl-key{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:14.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
   .tpl-key i{width:9px;height:9px;border-radius:2px;display:inline-block}
   .tpl-key .k1{background:var(--accent-2)}
   .tpl-key .k2{background:var(--accent)}
@@ -479,8 +490,8 @@
   .tpl-dots .k2{background:var(--accent)}
   .tpl-dots .plus{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:15px;line-height:1}
   .gain-note{margin-top:16px;padding:12px 14px;background:var(--paper);border:1px dashed var(--accent-2);border-radius:var(--radius)}
-  .gain-note .ga{display:block;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);margin-bottom:6px}
-  .gain-row{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--ink-soft);padding:5px 0;border-top:1px solid var(--line)}
+  .gain-note .ga{display:block;font-size:14.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2);margin-bottom:6px}
+  .gain-row{display:flex;justify-content:space-between;gap:10px;font-size:13.5px;color:var(--ink-soft);padding:5px 0;border-top:1px solid var(--line)}
   .gain-row:first-of-type{border-top:none}
   .gain-row>span:first-child{font-weight:600;color:var(--ink)}
   .gain-row s{color:var(--ink-soft);text-decoration-color:rgba(110,105,92,.6)}
@@ -489,9 +500,9 @@
   .jb{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);padding:14px 14px 12px;margin-top:12px}
   .jb-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
   .jb-head .mini-k{margin-bottom:0;font-size:17px}
-  .jb-tag{flex:none;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+  .jb-tag{flex:none;font-size:13.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
     border:1px dashed var(--line);border-radius:99px;padding:2px 9px;background:var(--paper-2)}
-  .jb-cap{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:10px;font-weight:700;
+  .jb-cap{margin-top:10px;padding-top:8px;border-top:1px dashed var(--line);font-size:14.5px;font-weight:700;
     letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
   .pb-bridge{display:block;margin:14px 0 4px;transform:rotate(-1deg)}
 
@@ -531,42 +542,37 @@
   .fx-sentence:hover .fx-after{display:block}
   .fx-sentence.fx-flip .fx-before{display:none}
   .fx-sentence.fx-flip .fx-after{display:block}
-  .fx-hypo{
-    position:absolute;top:4px;right:4px;font-size:9.5px;font-weight:700;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--ink-soft);border:1px dashed var(--line);
-    border-radius:99px;padding:2px 8px;background:var(--paper-2);
-  }
   .fx-stamp{
     font-family:var(--hand);font-style:normal;color:#fff;background:var(--accent);
     border-radius:6px;padding:0 9px;margin:0 2px;display:inline-block;transform:rotate(-7deg);
     box-shadow:0 4px 10px -2px rgba(224,71,43,.45);animation:fx-in .32s cubic-bezier(.34,1.56,.64,1);
   }
   @keyframes fx-in{from{transform:rotate(-30deg) scale(.3);opacity:0}}
-  .fx-capt{font-size:11.5px;color:var(--ink-soft);text-align:center;margin:10px 0 0;letter-spacing:.02em}
-  .fx-capt2{font-size:10px;color:var(--ink-soft);opacity:.75;text-align:center;margin:3px 0 0;font-style:italic;letter-spacing:.02em}
+  .fx-capt{font-size:14.5px;color:var(--ink-soft);text-align:center;margin:10px 0 0;letter-spacing:.02em}
+  .fx-capt2{font-size:14.5px;color:var(--ink-soft);opacity:.75;text-align:center;margin:3px 0 0;font-style:italic;letter-spacing:.02em}
   .fx-routes{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px;text-align:center}
   .fx-root{
-    display:inline-block;font-family:var(--serif);font-style:italic;font-size:13px;color:var(--ink-soft);
+    display:inline-block;font-family:var(--serif);font-style:italic;font-size:14.5px;color:var(--ink-soft);
     border:1px solid var(--line);border-radius:99px;padding:3px 12px;
   }
-  .fx-rootsub{font-size:10px;color:var(--ink-soft);opacity:.75;margin:5px 0 0;font-style:italic}
+  .fx-rootsub{font-size:14.5px;color:var(--ink-soft);opacity:.75;margin:5px 0 0;font-style:italic}
   .fx-route{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left}
   .fx-branch{border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--paper-2)}
   .fx-branch b{display:block;font-family:var(--hand);font-size:15px;color:var(--accent-2);margin-bottom:2px}
-  .fx-branch span{display:block;font-size:12px;font-weight:700;margin-bottom:6px}
-  .fx-branch i{display:block;font-style:italic;font-size:11.5px;line-height:1.4;color:var(--ink-soft);margin-bottom:4px}
+  .fx-branch span{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px}
+  .fx-branch i{display:block;font-style:italic;font-size:14.5px;line-height:1.4;color:var(--ink-soft);margin-bottom:4px}
   .fx-branch i:last-of-type{margin-bottom:0}
-  .fx-branch em{display:block;font-style:normal;font-size:9.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:8px;padding-top:6px;border-top:1px dashed var(--line)}
-  .fx-repair{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px;font-size:11.5px;font-weight:700}
+  .fx-branch em{display:block;font-style:normal;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:8px;padding-top:6px;border-top:1px dashed var(--line)}
+  .fx-repair{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px;font-size:14.5px;font-weight:700}
   .fx-repair>span{background:var(--paper-2);border:1px solid var(--line);border-radius:99px;padding:5px 11px}
   .fx-repair>i{color:var(--accent);font-style:normal}
   /* 已发表论文外链 */
   .fx-paper{display:flex;width:max-content;align-items:center;gap:8px;margin:16px auto 0;padding:9px 18px;
     border:1px solid var(--accent);border-radius:99px;color:var(--accent);background:transparent;
-    font-size:12.5px;font-weight:600;letter-spacing:.04em;text-decoration:none;
+    font-size:14px;font-weight:600;letter-spacing:.04em;text-decoration:none;
     transition:background .25s ease,color .25s ease}
   .fx-paper:hover{background:var(--accent);color:#fff}
-  .fx-repair .hand{flex-basis:100%;text-align:center;font-weight:400;font-size:16px;color:var(--accent-2);transform:rotate(-1.2deg);margin-top:6px}
+  .fx-repair .hand{flex-basis:100%;text-align:center;font-weight:400;font-size:18px;color:var(--accent-2);transform:rotate(-1.2deg);margin-top:6px}
   @media(max-width:560px){.fx-route{grid-template-columns:1fr}}
 
   /* ============ 04 Impact ============ */
@@ -598,7 +604,7 @@
   .impact h3 em{font-style:italic;color:var(--accent-3)}
   .impact-intro{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:12px}
   @media(max-width:700px){.impact-intro{grid-template-columns:1fr}}
-  .impact .role{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-3);margin-bottom:20px}
+  .impact .role{font-size:13.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-3);margin-bottom:20px}
   .impact p{color:rgba(246,242,233,.78);font-size:15.5px;max-width:none}
   .impact-intro p{margin:0}
   .timeline{margin-top:30px;border-left:1px solid rgba(246,242,233,.25);padding-left:22px;display:grid;gap:14px}
@@ -616,10 +622,10 @@
   }
   .notes-logo figcaption{
     margin-top:14px;text-align:center;font-family:var(--serif);font-style:italic;
-    font-size:13px;line-height:1.5;color:rgba(246,242,233,.66);
+    font-size:14.5px;line-height:1.5;color:rgba(246,242,233,.66);
   }
   .notes-tag{
-    display:block;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    display:block;font-size:14.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
     color:var(--accent-3);font-style:normal;margin-bottom:6px;
   }
   .notes-pages{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
@@ -636,19 +642,19 @@
     transform:translateY(6px);transition:opacity .3s ease,transform .3s ease;
   }
   .note-thumb:hover .note-hover,.note-thumb:focus-within .note-hover{opacity:1;transform:translateY(0)}
-  .nh-en{font-family:var(--serif);font-style:italic;font-size:12.5px;line-height:1.55;color:var(--paper-2)}
+  .nh-en{font-family:var(--serif);font-style:italic;font-size:14px;line-height:1.55;color:var(--paper-2)}
   .notes-pages figcaption{
-    margin-top:8px;font-family:var(--serif);font-style:italic;font-size:12px;line-height:1.5;
+    margin-top:8px;font-family:var(--serif);font-style:italic;font-size:13.5px;line-height:1.5;
     color:rgba(246,242,233,.6);border-left:2px solid rgba(246,242,233,.3);padding:2px 0 2px 8px;
   }
   .notes-cta{margin-top:30px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
   .notes-cta a{
     display:inline-block;border:1.5px solid var(--accent);color:var(--paper-2);
-    padding:11px 22px;border-radius:99px;font-size:13px;font-weight:700;letter-spacing:.06em;
+    padding:11px 22px;border-radius:99px;font-size:14.5px;font-weight:700;letter-spacing:.06em;
     text-decoration:none;transition:.25s;
   }
   .notes-cta a:hover{background:var(--accent)}
-  .notes-cta .hand{font-size:18px;color:rgba(246,242,233,.6)}
+  .notes-cta .hand{font-size:20px;color:rgba(246,242,233,.6)}
   @media(max-width:560px){.notes-pages{grid-template-columns:1fr 1fr}.notes-logo img{width:86%}}
   @media(max-width:400px){.notes-pages{grid-template-columns:1fr}}
   /* Podcast / audio-blog — 九集插图 Stack 卡堆（React Bits <Stack/> fan 原生移植，无 React/motion）
@@ -671,7 +677,7 @@
   .stack-card-content{position:relative;width:100%;height:100%;overflow:hidden;border-radius:8px;
     background:var(--paper);display:grid;place-items:center}
   .stack-card-content svg{width:152px;height:152px}
-  .stack-ep{position:absolute;top:10px;left:13px;font-size:9px;font-weight:700;letter-spacing:.18em;
+  .stack-ep{position:absolute;top:10px;left:13px;font-size:13.5px;font-weight:700;letter-spacing:.18em;
     text-transform:uppercase;color:var(--ink-soft)}
   .stack-card-shade{position:absolute;inset:0;border-radius:14px;background:#000;opacity:0;
     pointer-events:none;transition:opacity .3s ease}
@@ -684,7 +690,7 @@
   .pod-item summary::-webkit-details-marker{display:none}
   .pod-item summary:hover{color:var(--accent)}
   .pod-item summary:hover .pi-num{color:var(--accent)}
-  .pi-num{flex:none;width:46px;font-size:9px;font-weight:700;letter-spacing:.18em;color:#D8D0C0}
+  .pi-num{flex:none;width:46px;font-size:13.5px;font-weight:700;letter-spacing:.18em;color:#D8D0C0}
   .pod-item summary::after{content:'+';margin-left:auto;color:var(--accent);font-size:19px;line-height:1;
     transition:transform .25s ease}
   .pod-item[open] summary::after{transform:rotate(45deg)}
@@ -703,7 +709,7 @@
   .cook-copy .cook-lead em{font-style:italic;color:var(--accent)}
   .cook-copy p.cook-end{margin-bottom:0}
   .cook-end .serif-it{color:var(--accent);font-size:1.12em}
-  .cook-note{display:block;margin-top:14px;text-align:center;font-size:18px;color:var(--accent-2);transform:rotate(-1.4deg)}
+  .cook-note{display:block;margin-top:14px;text-align:center;font-size:30px;color:var(--accent-2);transform:rotate(-1.4deg)}
   /* StrokeText — Cooking & Baking title (vanilla port of React Bits <StrokeText/>, no GSAP) */
   #cooking .sec-head{align-items:center}
   .stroke-text{display:inline-block;line-height:0}
@@ -738,7 +744,7 @@
   .art-ring .circular-carousel__caption{position:absolute;left:0;right:0;bottom:20px;display:flex;flex-direction:column;align-items:center;gap:6px;padding:0 16px;color:inherit;text-align:center;pointer-events:none;animation:cc-reveal .9s ease both}
   .art-ring .circular-carousel__title{display:flex;max-width:100%;flex-direction:column;align-items:center;font-size:15px;font-weight:500;line-height:1.35;animation:cc-title .52s cubic-bezier(.22,1,.36,1)}
   .art-ring .circular-carousel__subtitle{font-weight:400;opacity:.6}
-  .art-ring .circular-carousel__count{display:inline-flex;align-items:center;gap:3px;font-size:12px;font-variant-numeric:tabular-nums;line-height:1;opacity:.5}
+  .art-ring .circular-carousel__count{display:inline-flex;align-items:center;gap:3px;font-size:13.5px;font-variant-numeric:tabular-nums;line-height:1;opacity:.5}
   .art-ring .circular-carousel__slash{opacity:.6}
   .art-ring .circular-carousel__digits{display:inline-flex}
   .art-ring .circular-carousel__digit{display:inline-block;height:1em;overflow:hidden}
@@ -753,25 +759,59 @@
     .art-ring .circular-carousel__caption,.art-ring .circular-carousel__title{animation:none}
   }
 
-  /* Dance strip */
-  .dance{margin-top:90px;border-top:1px solid var(--line);padding-top:64px;display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
-  .dance-img{transform:rotate(-1.5deg)}
-  .dance-img figure{box-shadow:var(--shadow);border-radius:var(--radius);overflow:hidden}
-  .dance-img img{height:420px;width:100%;object-fit:cover}
-  .dance-img .hand{display:block;text-align:center;margin-top:12px}
-  .dance-styles{display:grid;gap:0}
-  .d-style{padding:26px 0;border-bottom:1px solid var(--line)}
-  .d-style:first-child{border-top:1px solid var(--line)}
-  .d-style .dt{display:flex;align-items:baseline;gap:14px}
+  /* Dance strip —— 左：舞者抠图贴纸装饰 · 右：三个舞种卡片三栏排布 */
+  .dance{margin-top:90px;border-top:1px solid var(--line);padding-top:64px;display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:center}
+  .dance-img{position:relative;justify-self:center}
+  .dance-cutout{display:block;width:330px;max-width:100%;position:relative;z-index:1;transform:rotate(-4deg);
+    filter:drop-shadow(0 26px 26px rgba(33,31,26,.3))}
+  .dance-img .hand{display:block;text-align:center;margin-top:10px}
+  .dance-styles{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+  .d-style{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;
+    display:flex;flex-direction:column;align-items:flex-start}
+  .d-style .dt{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
   .d-style h4{font-family:var(--serif);font-weight:500;font-size:22px}
-  .d-style .dtheme{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .d-style .dtheme{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
   .d-style p{color:var(--ink-soft);font-size:14.5px;margin-top:8px;max-width:460px}
-  @media(max-width:900px){.dance{grid-template-columns:1fr;gap:36px}.dance-img img{height:340px}}
+  .d-style-img{display:block;width:100%;max-width:150px;margin:14px 0 0;border:4px solid #fff;border-radius:10px;
+    box-shadow:0 10px 22px -10px rgba(33,31,26,.45);transform:rotate(1.6deg)}
+  .d-style-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:flex-start}
+  .d-style-row .d-style-img{width:calc(50% - 5px);margin:0}
+  .d-style-row .d-style-img:last-child{transform:rotate(-1.4deg)}
+  .d-style-row--sq .d-style-img{aspect-ratio:1/1;object-fit:cover}
+  .d-style-img--wide{display:block;width:100%;max-width:none;margin:10px 0 0;transform:rotate(-1.2deg)}
+  /* 芭蕾课堂照：悬停弹出练习视频（白边相框、弹簧蹦出） */
+  .d-pop{position:relative;margin-top:10px}
+  .d-pop .d-style-img--wide{margin:0}
+  .d-pop-vid{position:absolute;left:50%;bottom:calc(100% + 12px);width:min(300px,80vw);display:block;
+    border:10px solid #fff;border-radius:6px;box-shadow:0 18px 40px -12px rgba(0,0,0,.35);
+    opacity:0;transform:translateX(-50%) translateY(12px) scale(.5) rotate(-4deg);transform-origin:50% 100%;
+    pointer-events:none;z-index:40;transition:transform .34s cubic-bezier(.34,1.56,.64,1),opacity .28s ease}
+  .d-pop:hover .d-pop-vid{opacity:1;transform:translateX(-50%) translateY(0) scale(1) rotate(-1.5deg)}
+  .d-pop-hint{display:inline-block;margin-top:8px;font-family:var(--script);font-size:16px;color:var(--accent);
+    background:rgba(246,242,233,.96);border:1.5px solid rgba(224,71,43,.4);border-radius:99px;padding:4px 12px;
+    box-shadow:0 6px 14px -8px rgba(0,0,0,.35);transform:rotate(-1.2deg)}
+  /* 左侧大张舞者贴纸：悬停弹出更大尺寸视频 */
+  .dance-img.d-pop{margin-top:0}
+  .dance-img .d-pop-vid{width:min(460px,70vw);border-width:12px}
+  .dance-img .hand{margin-top:8px}
+  /* 街舞照：血边全宽占满卡底、提示词在照片上方、视频向上弹出 */
+  .d-pop--side{display:block;margin:14px -22px -22px}
+  .d-pop--side .d-style-img{display:block;width:100%;margin:0;border:0;border-radius:0 0 14px 14px}
+  .d-pop--side .d-pop-hint{margin:0 0 10px 22px;font-size:14px;transform:rotate(1.2deg)}
+  .d-pop--side .d-pop-vid{width:min(300px,70vw)}
+  @media(max-width:980px){
+    .dance{grid-template-columns:1fr;gap:34px}
+    .dance-img{justify-self:center}
+    .dance-cutout{width:200px;margin:0 auto}
+    .dance-styles{grid-template-columns:1fr}
+  }
 
   /* ============ 06b Early drawings (childhood art + HoloCard) ============ */
   .early-art{margin-top:72px;padding-top:44px;border-top:1px dashed var(--line)}
   .early-copy{max-width:660px;margin-bottom:40px}
-  .mini-k{display:inline-block;margin-bottom:14px;font-size:21px;color:var(--accent-2);transform:rotate(-1.4deg)}
+  .mini-k{display:inline-block;margin-bottom:14px;font-size:23px;color:var(--accent-2);transform:rotate(-1.4deg)}
+  /* P02 四场景大标题：手写体大幅加大、拉开字距 */
+  .mini-k--lg{display:block;font-size:36px;letter-spacing:.08em;line-height:1.25}
   .early-copy p{font-size:16px;line-height:1.78;color:var(--ink-soft)}
   .holo-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;align-items:start;perspective:1600px}
   @media(max-width:900px){.holo-row{grid-template-columns:repeat(2,1fr);gap:28px}.early-copy{max-width:100%}}
@@ -779,7 +819,7 @@
   .holo-fig{margin:0}
   .holo-fig figcaption{margin-top:13px;display:flex;flex-direction:column;gap:3px}
   .holo-fig figcaption b{font-family:var(--serif);font-weight:600;font-size:15.5px;color:var(--ink)}
-  .holo-fig figcaption span{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft)}
+  .holo-fig figcaption span{font-size:14.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-soft)}
   /* HoloCard base (WebGL2 foil via canvas overlay; degrades to plain photo) */
   .holo-card{--hc-ratio:.77;position:relative;width:100%;aspect-ratio:var(--hc-ratio);border-radius:16px;touch-action:pan-y;cursor:pointer;-webkit-tap-highlight-color:transparent}
   .holo-card__shadow{position:absolute;inset:10% 7% -4%;border-radius:16px;filter:blur(26px);background:rgba(33,31,26,.3);z-index:0}
@@ -801,6 +841,23 @@
     transform:translate(-50%,-50%) scale(0);transition:box-shadow .3s ease;will-change:transform}
   .calli .bounce-cards[data-ready] .bounce-cards__card[data-active]{box-shadow:0 2px 4px rgba(0,0,0,.14),0 22px 44px -10px rgba(0,0,0,.42)}
   @media(max-width:640px){.calli .bounce-cards[data-ready]{height:340px}}
+  /* 书法版块空白处的奖项“贴纸”装饰：白边照片 + 胶带 + 手作倾斜 + 英文奖项注释 */
+  .calli{position:relative}
+  .award-sticker{position:absolute;z-index:6;pointer-events:none}
+  .award-sticker img{display:block;border:5px solid #fff;border-radius:7px;background:#fff;
+    box-shadow:0 2px 6px rgba(33,31,26,.16),0 12px 26px -10px rgba(33,31,26,.4)}
+  .award-sticker::before{content:'';position:absolute;top:-9px;left:50%;z-index:1;width:64px;height:19px;
+    transform:translateX(-50%) rotate(-4deg);border-radius:3px;
+    background:repeating-linear-gradient(-45deg,rgba(240,180,41,.38) 0 10px,rgba(240,180,41,.5) 10px 20px);
+    box-shadow:0 2px 4px rgba(33,31,26,.16)}
+  .award-cap{position:absolute;z-index:2;max-width:240px;background:var(--paper);border:1px solid var(--line);
+    border-radius:6px;box-shadow:0 3px 8px rgba(33,31,26,.18);padding:5px 10px;
+    font-family:var(--hand);font-size:14.5px;line-height:1.4;color:var(--ink);white-space:normal}
+  .award-sticker--trophy{right:0;top:2px;width:96px;transform:rotate(6deg);transform-origin:top right}
+  .award-sticker--trophy .award-cap{right:calc(100% + 12px);top:8px;text-align:right;transform:rotate(-1.5deg)}
+  .award-sticker--cert{left:0;bottom:0;width:124px;transform:rotate(-7deg);transform-origin:bottom left}
+  .award-sticker--cert .award-cap{left:calc(100% + 12px);bottom:10px;text-align:left;transform:rotate(1.5deg)}
+  @media(max-width:820px){.award-sticker{display:none}}
 /* ============ 07 Everyday ============ */
   .everyday{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .ed-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;margin-top:56px}
@@ -819,7 +876,7 @@
     box-shadow:inset -3px -5px 7px rgba(178,110,10,.38),0 2px 6px rgba(178,110,10,.3)}
   .cook-badge:hover,.cook-badge:focus-visible{transform:translateY(-3px) rotate(-7deg) scale(1.09)}
   .cook-badge:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-  .ed-hint{display:block;margin-top:14px;font-size:17px;color:var(--accent);transform:rotate(-1.2deg)}
+  .ed-hint{display:block;margin-top:14px;font-size:28px;color:var(--accent);transform:rotate(-1.2deg)}
   /* running card — accordion gallery (photo ↔ data) */
   .rag{display:flex;gap:10px;height:250px;margin:0 20px 18px;perspective:1200px}
   .rag-stack{display:grid;grid-template-rows:1fr 1fr;gap:10px;margin:0 20px 18px}
@@ -837,13 +894,13 @@
   .rag-cap{position:absolute;left:14px;right:14px;bottom:12px;display:flex;align-items:center;gap:9px;opacity:0;transform:translateX(-10px);transition:opacity .45s ease .08s,transform .45s ease .08s;pointer-events:none}
   .rag-panel.on .rag-cap{opacity:1;transform:translateX(0)}
   .rag-bar{flex:0 0 auto;width:3px;height:20px;border-radius:3px;background:#fff;box-shadow:0 0 10px rgba(255,255,255,.45)}
-  .rag-cap span:last-child{color:#fff;font-size:12.5px;font-weight:600;letter-spacing:.02em;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+  .rag-cap span:last-child{color:#fff;font-size:14px;font-weight:600;letter-spacing:.02em;text-shadow:0 2px 10px rgba(0,0,0,.5)}
   .rag-data .rag-media{display:flex;align-items:center;justify-content:center;background:#181510}
   .rag-inner{display:flex;flex-direction:column;align-items:center;gap:6px;width:100%;opacity:0;transition:opacity .5s ease .1s}
   .rag-panel.on .rag-inner{opacity:1}
   .rag-big{font-family:var(--serif);font-style:normal;font-size:clamp(30px,3vw,44px);font-weight:600;color:var(--paper);line-height:1}
-  .rag-data small{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#E9CBA0}
-  .rag-sub{font-size:12px;color:rgba(246,242,233,.72)}
+  .rag-data small{font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#E9CBA0}
+  .rag-sub{font-size:13.5px;color:rgba(246,242,233,.72)}
   .rag-data svg{width:78%;margin-top:6px}
   @media(max-width:560px){
     .rag{flex-direction:column;height:auto;margin:0 16px 18px}
@@ -879,11 +936,11 @@
     font-family:var(--hand);font-size:clamp(16px,2vw,20px);color:#efe6d4;opacity:.9;
     text-align:center;width:90%;pointer-events:none;
   }
-  @media(max-width:700px){.bs-hub{width:100px;height:100px}.bs-emoji{font-size:30px}.bs-hubcap{font-size:12px}}
+  @media(max-width:700px){.bs-hub{width:100px;height:100px}.bs-emoji{font-size:30px}.bs-hubcap{font-size:13.5px}}
   @media (prefers-reduced-motion: reduce){.bs-bubble,.bs-hub{transition:none}}
   .ed-card img{height:200px;width:100%;object-fit:cover}
   .ed-body{padding:24px}
-  .ed-body .ed-k{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+  .ed-body .ed-k{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
   .ed-body h4{font-family:var(--serif);font-weight:500;font-size:21px;margin-bottom:8px}
   .ed-body p{font-size:14px;color:var(--ink-soft)}
   .cf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
@@ -893,7 +950,7 @@
   .cf-one img{width:100%;height:auto;border-radius:8px;display:block}
   .run-stat{display:flex;gap:22px;margin:16px 0 4px}
   .run-stat div b{font-family:var(--serif);font-size:24px;font-weight:500;display:block;line-height:1.1}
-  .run-stat div span{font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+  .run-stat div span{font-size:13.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
   .run-stat div b i{font-style:normal;color:var(--accent)}
   @media(max-width:900px){.ed-grid{grid-template-columns:1fr}}
 
@@ -921,7 +978,7 @@
   /* 澳大利亚/希腊卡标题栏压缩，让照片占据更多卡片空间 */
   .au-cap,.gk-cap{margin-top:10px;padding:0 2px}
   .au-cap b,.gk-cap b{font-size:15.5px}
-  .au-cap span,.gk-cap span{margin-top:2px;font-size:10px}
+  .au-cap span,.gk-cap span{margin-top:2px;font-size:14.5px}
   .t-flip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .t-slide{opacity:0;transform:rotate(4deg) scale(1.04);transition:opacity .6s ease,transform .6s ease}
   .t-slide.on{opacity:1;transform:none;z-index:2}
@@ -929,18 +986,18 @@
   .t-arrow:hover{background:rgba(29,27,23,.5)}
   .t-prev{left:12px}
   .t-next{right:12px}
-  .t-count{position:absolute;top:12px;right:12px;z-index:5;font-family:var(--serif);font-style:italic;font-size:12px;color:#fff;background:rgba(29,27,23,.35);backdrop-filter:blur(4px);padding:4px 10px;border-radius:999px}
+  .t-count{position:absolute;top:12px;right:12px;z-index:5;font-family:var(--serif);font-style:italic;font-size:13.5px;color:#fff;background:rgba(29,27,23,.35);backdrop-filter:blur(4px);padding:4px 10px;border-radius:999px}
   .t-dots{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);z-index:5;display:flex;gap:7px}
   .t-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.45);border:none;padding:0;cursor:pointer;transition:background .25s ease,transform .25s ease}
   .t-dot.on{background:#fff;transform:scale(1.3)}
   .t-card figcaption{margin-top:12px;padding:0 4px}
   .t-card figcaption b{display:block;font-family:var(--serif);font-weight:500;font-size:17px}
-  .t-card figcaption span{display:block;margin-top:4px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
-  .t-card figcaption .t-note{margin-top:9px;font-size:13px;line-height:1.55;color:var(--ink-soft)}
-  .t-note{font-size:11px;color:var(--ink-soft);margin-top:14px}
+  .t-card figcaption span{display:block;margin-top:4px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+  .t-card figcaption .t-note{margin-top:9px;font-size:14.5px;line-height:1.55;color:var(--ink-soft)}
+  .t-note{font-size:14px;color:var(--ink-soft);margin-top:14px}
   /* travel chroma spotlight grid — React Bits ChromaGrid 原生移植（照片未填时显示空槽） */
   .t-chroma{grid-column:span 2}
-  .t-chroma-note{display:block;margin:14px 0 0;text-align:center;font-size:18px;color:var(--accent-2);transform:rotate(-1.2deg)}
+  .t-chroma-note{display:block;margin:18px 0 0;text-align:center;font-size:clamp(30px,4.5vw,48px);line-height:1.15;color:var(--accent-2);transform:rotate(-1.2deg)}
   .chroma-grid{
     --chroma-cols:2;--chroma-min:160px;--chroma-gap:12px;--chroma-r:260px;
     --chroma-ratio:3/2;--chroma-radius:var(--radius);--chroma-gray:1;--chroma-dim:.12;
@@ -973,7 +1030,7 @@
   .chroma-media-rim{position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px var(--chroma-media-edge);pointer-events:none}
   .chroma-info{position:relative;z-index:1;display:flex;flex-direction:column;gap:2px;min-width:0;padding:2px 6px 4px}
   .chroma-title{overflow:hidden;font-size:15px;font-weight:600;line-height:1.3;letter-spacing:-.01em;text-overflow:ellipsis;white-space:nowrap}
-  .chroma-subtitle{overflow:hidden;font-size:13px;line-height:1.35;color:var(--chroma-muted);text-overflow:ellipsis;white-space:nowrap}
+  .chroma-subtitle{overflow:hidden;font-size:14.5px;line-height:1.35;color:var(--chroma-muted);text-overflow:ellipsis;white-space:nowrap}
   .chroma-card-rim,.chroma-card-glow{position:absolute;inset:0;z-index:2;border-radius:inherit;pointer-events:none}
   .chroma-card-rim{box-shadow:inset 0 0 0 1px var(--chroma-tile-edge),inset 0 1px 0 var(--chroma-tile-highlight)}
   .chroma-card-glow{box-shadow:inset 0 0 0 1px var(--chroma-accent),inset 0 0 16px -8px var(--chroma-accent);opacity:calc(var(--chroma-border) * var(--chroma-power))}
@@ -994,6 +1051,19 @@
   .more-card li{font-size:14px;color:var(--ink-soft);padding-left:20px;position:relative}
   .more-card li::before{content:"—";position:absolute;left:0;color:var(--accent-2)}
   .more-card li b{color:var(--ink);font-weight:600}
+  /* 甜点条目：悬停时文字放大变色，甜点照向左下方弹出（手作风旋转） */
+  .more-card .hover-pop{cursor:default;transition:transform .25s ease,color .25s ease}
+  .more-card .hover-pop:hover{transform:scale(1.1);color:var(--accent);font-weight:600}
+  .hover-pop .li-pop{position:absolute;left:-30px;top:calc(100% + 14px);width:min(220px,38vw);aspect-ratio:1/1;
+    object-fit:cover;transform:translateX(-16px) translateY(-10px) scale(.4) rotate(-9deg);transform-origin:0% 0%;
+    opacity:0;border:10px solid #fff;border-radius:6px;
+    box-shadow:0 18px 40px -12px rgba(0,0,0,.35);pointer-events:none;z-index:40;
+    transition:transform .34s cubic-bezier(.34,1.56,.64,1),opacity .3s ease}
+  .hover-pop:hover .li-pop{transform:translateX(0) translateY(0) scale(1) rotate(-3deg);opacity:1}
+  /* 画稿条目：同款悬停弹图，但向右上方弹出（镜像手作风） */
+  .hover-pop.pop-tr .li-pop{left:auto;right:-30px;top:auto;bottom:calc(100% + 14px);
+    transform:translateX(16px) translateY(10px) scale(.4) rotate(9deg);transform-origin:100% 100%}
+  .hover-pop.pop-tr:hover .li-pop{transform:translateX(0) translateY(0) scale(1) rotate(3deg);opacity:1}
   @media(max-width:900px){.more-grid{grid-template-columns:1fr}.more-card{transform:none}}
 
   /* ============ Footer ============ */
@@ -1005,16 +1075,16 @@
   .footer-big em{font-style:italic;color:var(--accent)}
   .footer-links{margin-top:44px;display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
   .footer-links a{
-    text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
     color:var(--ink-soft);border-bottom:1.5px solid var(--line);padding-bottom:4px;transition:color .2s,border-color .2s;
   }
   .footer-links a:hover{color:var(--accent);border-color:var(--accent)}
-  .footer-meta{margin-top:70px;padding-top:26px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-soft)}
+  .footer-meta{margin-top:70px;padding-top:26px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink-soft)}
   .footer-meta p+p{margin-top:6px}
   .footer-hand{font-family:var(--hand);font-size:22px;color:var(--accent-2);transform:rotate(-1.5deg);display:inline-block;margin-bottom:26px}
   /* ---------- Split-flap departure board (01 → 02 divider) ---------- */
   .flap-divider{padding:66px 16px 60px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .flap-divider::before{content:'departures';display:block;font-size:10px;letter-spacing:.42em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:28px}
+  .flap-divider::before{content:'departures';display:block;font-size:14.5px;letter-spacing:.42em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:28px}
   .splitflap{display:inline-flex;align-items:center;gap:4px;color:#f6f2e9;font-family:var(--sans);font-weight:700;font-size:clamp(22px,4.2vw,42px);line-height:1;letter-spacing:.05em;white-space:pre;user-select:none;font-variant-numeric:tabular-nums}
   @media(max-width:560px){.splitflap{gap:3px;font-size:clamp(13px,4vw,20px)}}
   .splitflap__t{position:relative;width:.78em;height:1.08em;overflow:hidden;border-radius:6px;background:radial-gradient(circle at 50% 0%,rgba(255,255,255,.12),transparent 44%),linear-gradient(180deg,#37332b,#211f1a);box-shadow:0 .035em .08em rgba(255,255,255,.08) inset,0 -.05em .1em rgba(0,0,0,.38) inset,0 .16em .38em rgba(0,0,0,.28);perspective:520px;transform-style:preserve-3d;isolation:isolate}
@@ -1156,7 +1226,7 @@
         <span class="hand">a high-school researcher,<br>artist &amp; very amateur baker</span>
         <figure class="about-photo reveal d1">
           <div class="card tape">
-            <img src="images/hero-portrait.jpg" alt="Emma — between the lab bench and the easel">
+            <img src="images/hero-portrait.jpg" alt="Emma smiling in a cream fringed knit poncho, lifting a brown wide-brimmed hat, standing against rolling golden grasslands">
             <figcaption>me — somewhere between a waveform and a brushstroke</figcaption>
           </div>
         </figure>
@@ -1237,6 +1307,26 @@
     <!-- Project 01 · EEG -->
     <article class="project reveal in p01">
       <div class="p-text">
+        <div class="candle-row" aria-hidden="true">
+          <svg viewBox="0 0 22 46" height="44" style="transform:rotate(-4deg)">
+            <ellipse cx="11" cy="9" rx="7" ry="5.5" fill="#E0472B" opacity=".25"></ellipse>
+            <rect x="5" y="24" width="12" height="18" rx="2" fill="#F6F2E9" stroke="#2E2A24" stroke-width="1.6"></rect>
+            <line x1="11" y1="22" x2="11" y2="18" stroke="#2E2A24" stroke-width="1.6" stroke-linecap="round"></line>
+            <path class="fl" d="M11 3 C13 7 15 9 14.5 12 C14 14.5 12.5 16 11 16.5 C9.5 16 8 14.5 7.5 12 C7 9 9 7 11 3 Z" fill="#E0472B"></path>
+          </svg>
+          <svg viewBox="0 0 22 46" height="36" style="transform:rotate(2.5deg)">
+            <ellipse cx="11" cy="9" rx="7" ry="5.5" fill="#E0472B" opacity=".25"></ellipse>
+            <rect x="5" y="24" width="12" height="18" rx="2" fill="#F6F2E9" stroke="#2E2A24" stroke-width="1.6"></rect>
+            <line x1="11" y1="22" x2="11" y2="18" stroke="#2E2A24" stroke-width="1.6" stroke-linecap="round"></line>
+            <path class="fl b" d="M11 3 C13 7 15 9 14.5 12 C14 14.5 12.5 16 11 16.5 C9.5 16 8 14.5 7.5 12 C7 9 9 7 11 3 Z" fill="#E0472B"></path>
+          </svg>
+          <svg viewBox="0 0 22 46" height="28" style="transform:rotate(-7deg)">
+            <ellipse cx="11" cy="9" rx="7" ry="5.5" fill="#E0472B" opacity=".25"></ellipse>
+            <rect x="5" y="24" width="12" height="18" rx="2" fill="#F6F2E9" stroke="#2E2A24" stroke-width="1.6"></rect>
+            <line x1="11" y1="22" x2="11" y2="18" stroke="#2E2A24" stroke-width="1.6" stroke-linecap="round"></line>
+            <path class="fl c" d="M11 3 C13 7 15 9 14.5 12 C14 14.5 12.5 16 11 16.5 C9.5 16 8 14.5 7.5 12 C7 9 9 7 11 3 Z" fill="#E0472B"></path>
+          </svg>
+        </div>
         <span class="p-tag tag-red">Project 01 · Measuring the invisible</span>
         <h3>EEG &amp; Brain–Computer Interface Research</h3>
         <div class="p-meta"><b>Xidian University</b> · 2024.7 – 2025.11 · Student Researcher</div>
@@ -1447,7 +1537,6 @@
         <div class="card visual-pad fx-card">
           <div class="fig-label"><span>Fig. 4 — when fluent output stops being the user’s</span><i>hover to flip</i></div>
           <div class="fx-sentence">
-            <span class="fx-hypo">hypothetical case</span>
             <p class="fx-line fx-before">“I do want the procedure.”</p>
             <p class="fx-line fx-after">“I do <span class="fx-stamp">not</span> want the procedure.”</p>
             <p class="fx-capt">one inserted word → a different communicative act</p>
@@ -1482,7 +1571,7 @@
 
       <!-- four editorial illustrations — body, machine, person：排在 p-text / fx-card 之下、横跨两列 -->
       <div class="p-ills reveal">
-          <div class="mini-k hand" style="margin-bottom:16px">four scenes — the body, the machine, the person</div>
+          <div class="mini-k mini-k--lg hand" style="margin-bottom:16px">four scenes — the body, the machine, the person</div>
           <div class="p-ills-grid">
             <figure>
               <div class="flip-card" role="button" tabindex="0" aria-label="Myoelectric hand — flip for the question">
@@ -1975,7 +2064,7 @@
   <div class="wrap">
     <div class="sec-head reveal"><span class="idx">06</span><h2 class="sec-title">Ways I See</h2></div>
     <p class="sec-sub reveal d1" id="artSub">
-      Painting taught me to look longer; calligraphy taught me that precision and interpretation
+      <span class="hl-coral">Painting</span> taught me to look longer; <span class="hl-cobalt">calligraphy</span> taught me that precision and interpretation
       need each other. Both trained the same muscle research uses.
     </p>
 
@@ -2506,7 +2595,17 @@
           { src:'images/art-kettle-still.jpg', alt:'Oil still life of a dark two-handled kettle with apples, pears, grapes and a knife, signed and dated 2022', title:'Still life with kettle', subtitle:'oil · 2022' },
           { src:'images/art-pot-vegetables.jpg', alt:'Still life of a dark pot with a tomato and a red chili over yellow cloth in a black and gold frame', title:'Pot, tomato & chili', subtitle:'gouache · still life' },
           { src:'images/art-jn-alley.jpg', alt:'Watercolor of a Jiangnan old-town alley — worn stone lane between weathered houses, taped to a board on a studio easel', title:'Jiangnan alley', subtitle:'watercolor · alley study' },
-          { src:'images/art-jar-fruits.jpg', alt:'Watercolor still life of a dark jar with a pink cloth, watermelon, apple, orange and cherries on blue-grey drapery, signed 2023.9.16', title:'Jar & fruit still life', subtitle:'watercolor · Sept 2023' }
+          { src:'images/art-jar-fruits.jpg', alt:'Watercolor still life of a dark jar with a pink cloth, watermelon, apple, orange and cherries on blue-grey drapery, signed 2023.9.16', title:'Jar & fruit still life', subtitle:'watercolor · Sept 2023' },
+          { src:'images/art-railway.jpg', alt:'Framed landscape painting of a railroad track running into autumn woods — golden foliage forming a natural arch, matted white and set in a dark wooden frame', title:'Autumn railroad', subtitle:'painting · framed' },
+          { src:'images/art-711-corner.jpg', alt:'Hand-drawn Japanese dusk street scene — a lit 7-Eleven on the corner with a red post box, tilted utility poles and pink-purple evening sky', title:'The 7-Eleven corner', subtitle:'marker · street scene' },
+          { src:'images/art-lily-easel.jpg', alt:'A painter at the easel working on a Monet-style water-lily oil painting with a palette full of blues and greens', title:'Painting the water lilies', subtitle:'oil · at the easel' },
+          { src:'images/art-geo-still.jpg', alt:'Geometric still life in oil — a blue cone, red, orange and yellow spheres around a white block, signed Emma.G', title:'Geometric study', subtitle:'oil · basic forms' },
+          { src:'images/art-garden-sketch.jpg', alt:'Sketching outdoors on a garden bench with a yellow pencil, headphones on — lawn, red brick path and a stone lantern behind', title:'Sketching in the garden', subtitle:'pencil · outdoors' },
+          { src:'images/art-lily-pond.jpg', alt:'Impressionist water-lily oil painting in a dark carved frame — blue-violet pond with floating pads and pink blossoms, signed and dated 2024.5.9', title:'Lily pond', subtitle:'oil · May 2024' },
+          { src:'images/art-crowned-figure.jpg', alt:'Black-and-white pen illustration dated 2023.11.9 — a blindfolded, crowned figure pierced by arrows, gripping a sword, dense linework against a starry black background', title:'The crowned figure', subtitle:'pen & ink · Nov 2023' },
+          { src:'images/art-america-g6.jpg', alt:'A grade-6 mixed-media artwork titled America — a watercolour starry-night sky, a painted U.S. flag, a pencil-drawn bald eagle head, and 3-D paper stars in the corners, labelled Emma Chang, McCulloch Intermediate', title:'America', subtitle:'mixed media · grade 6' },
+          { src:'images/art-vase-flower.jpg', alt:'A pencil portrait of a Minion — round goggle eyes, overalls with a Gru badge and black gloves, hands folded at the front, shaded in soft grey tones, signed Emma Chang 5/19/2019', title:'The little minion', subtitle:'pencil · May 2019' },
+          { src:'images/art-mickey-pop.jpg', alt:'A pop-art Mickey Mouse drawing — black outlines, red shorts and yellow shoes, set against a stained-glass mosaic of red, yellow and blue geometric patterned tiles', title:'Mickey in mosaic', subtitle:'pop art · markers' }
         ];
         var count = ITEMS.length;
         var ringEl = root.querySelector('.circular-carousel__ring');
@@ -2852,6 +2951,8 @@
 
     <!-- Calligraphy · BounceCards（React Bits 原生移植，无 React） -->
     <div class="calli reveal">
+      <div class="award-sticker award-sticker--trophy"><img src="images/calli-award-trophy.jpg" alt="Crystal trophy — Grand Prize, 3rd Pen & Ink Vanguard Cup national hard-pen calligraphy competition, student division, July 2018" loading="lazy"><span class="award-cap">Grand Prize — 3rd “Pen &amp; Ink Vanguard” Cup national hard-pen calligraphy competition (student division) · 2018</span></div>
+      <div class="award-sticker award-sticker--cert"><img src="images/calli-award-cert.jpg" alt="Award certificate — Grand Prize, 3rd Pen & Ink Vanguard Cup national hard-pen calligraphy competition, June 2018" loading="lazy"><span class="award-cap">The matching Grand Prize certificate · June 2018</span></div>
       <div class="calli-head">
         <div class="mini-k hand">brush &amp; hard-pen — kept since the rooster year</div>
         <h3>Calligraphy</h3>
@@ -2863,8 +2964,12 @@
         <div class="bounce-cards__card"><img src="images/calli-8.jpg" alt="Emma writing New Year couplets in kaishu with a brush on red paper, a practice model sheet beside her" loading="lazy" draggable="false"></div>
         <div class="bounce-cards__card"><img src="images/calli-4.jpg" alt="A lyric by Liu Yong written in red hard-pen kaishu on indigo-bordered cloud-pattern paper, shaped like a traditional robe, dated spring 2018" loading="lazy" draggable="false"></div>
         <div class="bounce-cards__card"><img src="images/calli-5.jpg" alt="Brush practice — the character jiàn repeated in kaishu on a red-grid sheet, with brush, paperweight and ink dish on grey felt" loading="lazy" draggable="false"></div>
+        <div class="bounce-cards__card"><img src="images/calli-12.jpg" alt="Emma in a grey hoodie writing New Year couplets with a brush — three long red papers with gold medallion patterns, kaishu phrases like 'fortune arrives at the door' and 'three stars in the household', ink dish at hand, a wall of children's drawings behind" loading="lazy" draggable="false"></div>
         <div class="bounce-cards__card"><img src="images/calli-6.jpg" alt="Daily brush practice after the Yin Fu Jing — kaishu characters on tinted and white practice sheets, held by a black paperweight" loading="lazy" draggable="false"></div>
         <div class="bounce-cards__card"><img src="images/calli-7.jpg" alt="Brush study of the character jìn with a stroke-by-stroke breakdown, practice sheets beside a bamboo brush on grey felt" loading="lazy" draggable="false"></div>
+        <div class="bounce-cards__card"><img src="images/calli-9.jpg" alt="Hard-pen kaishu copy of Fan Zhongyan's lyric Su Mu Zhe in a red oval grid on a school art-festival practice sheet" loading="lazy" draggable="false"></div>
+        <div class="bounce-cards__card"><img src="images/calli-10.jpg" alt="Hard-pen kaishu copy of Bai Juyi's poem Qiantang Lake in Spring, inscribed 'written in Xi'an', on school practice paper" loading="lazy" draggable="false"></div>
+        <div class="bounce-cards__card"><img src="images/calli-11.jpg" alt="Brush practice in kaishu — the characters jì, wèi, jì and bīng repeated across a grid sheet, a copybook visible at the edge" loading="lazy" draggable="false"></div>
       </div>
     </div>
 
@@ -3003,22 +3108,46 @@
 
     <!-- Dance -->
     <div class="dance">
-      <div class="dance-img reveal">
-        <figure><img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=young%20female%20dancer%20mid%20leap%20in%20bright%20dance%20practice%20studio%2C%20flowing%20movement%2C%20soft%20window%20light%2C%20documentary%20photography%2C%20motion&image_size=portrait_4_3" alt="Dancer mid-leap in a bright studio"></figure>
+      <div class="dance-img reveal in d-pop d-pop--lg">
+        <img class="dance-cutout" src="images/dance-big.png" alt="A young dancer cut-out in a black top and wide red skirt, bent forward with hands crossed in a classical gesture — decorative sticker">
+        <video class="d-pop-vid" src="videos/dance-solo.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="d-pop-hint">▶ there's a video in here</span>
         <span class="hand">thinking through movement</span>
       </div>
       <div class="dance-styles">
         <div class="d-style reveal">
           <div class="dt"><h4>Chinese dance</h4><span class="dtheme">expression &amp; control</span></div>
           <p>Where a breath becomes a gesture — learning that restraint is a form of emphasis.</p>
+          <div class="d-style-row d-style-row--sq">
+            <img class="d-style-img" src="images/dance-chinese.jpg" alt="A 3×3 collage of stage moments — young dancers in gradient costumes performing Chinese classical dance with long flowing silk sleeves under pink-purple stage light" loading="lazy">
+            <img class="d-style-img" src="images/dance-cn-4.jpg" alt="A young girl in a pink cable-knit sweater and light blue sweatpants with dark side stripes doing a side split on the floor of an indoor corridor, red Young Pioneer scarf, ponytail with a red tie, seen from a high angle" loading="lazy">
+          </div>
+          <div class="d-style-row">
+            <img class="d-style-img" src="images/dance-cn-2.jpg" alt="A young girl in a purple leotard with contest number 11, arms raised in a classical pose, practising in a bright dance studio with a barre and green curtains" loading="lazy">
+            <img class="d-style-img" src="images/dance-cn-3.jpg" alt="Three young dancers in pink-and-purple Chinese classical costumes with butterfly hairpieces posing in a staggered formation on a dark stage" loading="lazy">
+          </div>
         </div>
         <div class="d-style reveal d1">
           <div class="dt"><h4>Ballet</h4><span class="dtheme">structure &amp; discipline</span></div>
           <p>Years at the barre taught me the same thing as lab notebooks: form is what makes freedom possible.</p>
+          <div class="d-style-row">
+            <img class="d-style-img" src="images/dance-ballet-1.jpg" alt="A young ballerina in a grey lace leotard, tutu and pink shoes holding a classic ballet pose indoors" loading="lazy">
+            <img class="d-style-img" src="images/dance-ballet-2.jpg" alt="A young ballerina in a sequined blue leotard and white shoes practicing a pose, one leg lifted, arms extended" loading="lazy">
+          </div>
+          <div class="d-pop">
+            <img class="d-style-img d-style-img--wide" src="images/dance-ballet-3.jpg" alt="A ballet teacher in a light purple top guiding four young students in black leotards, white tights and ballet shoes at the barre in a bright dance studio with a mirrored wooden floor" loading="lazy">
+            <video class="d-pop-vid" src="videos/ballet-class.mp4" muted loop playsinline preload="metadata"></video>
+            <span class="d-pop-hint">▶ there's a video in here</span>
+          </div>
         </div>
         <div class="d-style reveal d2">
           <div class="dt"><h4>Street dance</h4><span class="dtheme">freedom &amp; improvisation</span></div>
           <p>The music changes, you answer in the moment — my favorite reminder that plans are starting points.</p>
+          <div class="d-pop d-pop--side">
+          <img class="d-style-img" src="images/dance-street.jpg" alt="A dancer on stage in a black leather jacket and cargo pants, silver chain belt, hands posed — gold cheering silhouettes on the red LED screen behind her" loading="lazy">
+          <video class="d-pop-vid" src="videos/street-dance.mp4" muted loop playsinline preload="metadata"></video>
+          <span class="d-pop-hint">▶ video here</span>
+        </div>
         </div>
       </div>
     </div>
@@ -3029,7 +3158,7 @@
 <section class="everyday" id="everyday">
   <div class="wrap">
     <div class="sec-head reveal"><span class="idx">07</span><h2 class="sec-title">Things I Keep Doing</h2></div>
-    <p class="sec-sub reveal d1">The goal was never performance. The goal is consistency.</p>
+    <p class="sec-sub reveal d1">The goal was never performance. The goal is <span class="hl-coral">consistency</span>.</p>
 
     <div class="ed-grid">
       <div class="ed-card reveal">
@@ -3291,8 +3420,12 @@
         <h4>off the clock</h4>
         <ul>
           <li>relearning French from children’s books — humbling, but strangely fun</li>
-          <li>drawing faces and tiny details I will probably spend too long fixing</li>
-          <li>making desserts for people when “thank you” feels too formal</li>
+          <li class="hover-pop pop-tr">drawing faces and tiny details I will probably spend too long fixing
+            <img class="li-pop" src="images/life-faces.jpg" alt="A pen drawing in Emma’s sketchbook — faces and tiny details" loading="lazy">
+          </li>
+          <li class="hover-pop">making desserts for people when “thank you” feels too formal
+            <img class="li-pop" src="images/life-dessert.jpg" alt="A dessert Emma made — a thank-you with no words" loading="lazy">
+          </li>
         </ul>
       </div>
       <div class="more-card reveal d1">
@@ -3330,7 +3463,6 @@
       <a href="#art">Art &amp; Movement</a>
     </div>
     <div class="footer-meta">
-      <p>© 2026 Emma · Portfolio V1 preview — placeholder copy &amp; images, to be replaced with real materials.</p>
       <p class="hand" style="font-size:19px">keep observing. keep asking. keep making.</p>
     </div>
   </div>
@@ -3769,6 +3901,13 @@
   }
   rebuild();
   if(document.fonts && document.fonts.ready) document.fonts.ready.then(rebuild);
+  /* 悬停 .d-pop 时播放/暂停弹窗视频 */
+  document.querySelectorAll('.d-pop').forEach(function(w){
+    var v=w.querySelector('video');if(!v)return;
+    w.addEventListener('mouseenter',function(){v.play().catch(function(){})});
+    w.addEventListener('mouseleave',function(){v.pause()});
+  });
+
   window.addEventListener('load', rebuild);
 
   if(reduced || !spacing) return; /* static fallback handled in CSS */
