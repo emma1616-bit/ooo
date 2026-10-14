@@ -107,6 +107,27 @@
     .nav-links li:first-child{display:none} /* Home = logo */
   }
 
+  /* ============ Fun rail — left-side jumps to the playful sections ============ */
+  #funRail{position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:40;
+    display:flex;flex-direction:column;align-items:center;gap:15px}
+  #funRail a{position:relative;width:52px;height:52px;display:grid;place-items:center;text-decoration:none;
+    background:var(--paper-2);border:1px solid var(--line);
+    border-radius:62% 45% 53% 57%/56% 61% 47% 63%;
+    color:var(--ink);box-shadow:0 6px 14px -8px rgba(33,31,26,.45),inset 0 0 0 2.5px rgba(240,180,41,.12);
+    transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .2s,color .2s}
+  #funRail a:nth-child(odd){rotate:3deg}
+  #funRail a svg{width:21px;height:21px}
+  #funRail a:hover{transform:translateX(5px) rotate(-8deg) scale(1.06);color:var(--accent)}
+  #funRail .rail-t{position:absolute;left:calc(100% + 10px);top:50%;transform:translateY(-50%) rotate(-3deg);
+    font-family:var(--hand);font-size:16px;color:var(--accent);white-space:nowrap;line-height:1;
+    background:var(--paper-2);border:1px dashed var(--line);padding:4px 10px 5px;border-radius:12px 10px 14px 8px;
+    opacity:0;pointer-events:none;transition:opacity .18s ease,transform .22s cubic-bezier(.34,1.56,.64,1)}
+  #funRail a:hover .rail-t{opacity:1;transform:translateY(-50%) rotate(-2deg)}
+  #funRail a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  #stCook,#stCalli,#stDance,#stTravel{scroll-margin-top:80px}
+  @media(max-width:1240px){#funRail{left:10px}#funRail a{width:46px;height:46px}#funRail a svg{width:18px;height:18px}}
+  @media(max-width:760px){#funRail{left:8px;gap:10px}#funRail a{width:40px;height:40px}#funRail a svg{width:16px;height:16px}}
+
   /* ============ Hero ============ */
   .hero{padding:84px 0 70px;position:relative}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
@@ -439,6 +460,11 @@
   .chip{
     font-size:14.5px;font-weight:600;letter-spacing:.04em;padding:6px 13px;border-radius:99px;
     background:var(--paper-3);color:var(--ink);
+  }
+  .chip--pub{
+    background:transparent;color:var(--accent);border:1.5px dashed var(--accent);box-shadow:none;
+    font-family:var(--hand);font-size:17px;font-weight:500;letter-spacing:.02em;
+    padding:4px 12px 5px;transform:rotate(-1.5deg)
   }
   @media(max-width:900px){
     .project{grid-template-columns:1fr;gap:36px;padding:54px 0}
@@ -866,16 +892,19 @@
   .ed-card.hotcard{position:relative}
   .cover-wrap{position:relative;display:block}
   /* fried-egg badge — the album now opens only from here */
-  .cook-badge{position:absolute;right:14px;bottom:14px;width:66px;height:66px;border:none;cursor:pointer;
+  .cook-badge{position:absolute;right:14px;bottom:14px;width:84px;height:84px;border:none;cursor:pointer;
     border-radius:72% 55% 64% 52%/70% 64% 58% 62%;background:#fffdf6;
-    box-shadow:0 8px 18px -8px rgba(33,31,26,.5),inset 0 0 0 3px rgba(240,180,41,.15);
+    box-shadow:0 10px 22px -8px rgba(33,31,26,.55),inset 0 0 0 3px rgba(240,180,41,.15);
     display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;
-    transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease}
-  .cook-badge::after{content:'';width:31px;height:31px;border-radius:50%;
+    transition:rotate .35s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease;
+    animation:cookPulse 1.6s ease-in-out infinite}
+  .cook-badge::after{content:'';width:40px;height:40px;border-radius:50%;
     background:radial-gradient(circle at 36% 30%,#ffd76a,#f0b429 58%,#d99b16);
     box-shadow:inset -3px -5px 7px rgba(178,110,10,.38),0 2px 6px rgba(178,110,10,.3)}
-  .cook-badge:hover,.cook-badge:focus-visible{transform:translateY(-3px) rotate(-7deg) scale(1.09)}
+  .cook-badge:hover,.cook-badge:focus-visible{rotate:-8deg;translate:0 -4px}
   .cook-badge:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  @keyframes cookPulse{0%,100%{transform:scale(1);box-shadow:0 10px 22px -8px rgba(33,31,26,.55),0 0 0 0 rgba(240,180,41,.35)}50%{transform:scale(1.13);box-shadow:0 10px 22px -8px rgba(33,31,26,.55),0 0 0 14px rgba(240,180,41,0)}}
+  @media (prefers-reduced-motion:reduce){.cook-badge{animation:none}}
   .ed-hint{display:block;margin-top:14px;font-size:28px;color:var(--accent);transform:rotate(-1.2deg)}
   /* running card — accordion gallery (photo ↔ data) */
   .rag{display:flex;gap:10px;height:250px;margin:0 20px 18px;perspective:1200px}
@@ -1127,6 +1156,64 @@
   </div>
 </nav>
 
+<!-- ============ Fun rail ============ -->
+<div id="funRail" role="navigation" aria-label="Jump to the fun sections">
+  <a href="#stCook" data-sect="stCook" aria-label="Cooking and baking">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="12.4" rx="8.2" ry="8.5" transform="rotate(-7 12 12.4)"/><circle cx="11.5" cy="11.9" r="3"/></svg>
+    <span class="rail-t">cooking</span>
+  </a>
+  <a href="#art" data-sect="art" aria-label="Ways I see — the art gallery">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><circle cx="9.3" cy="10" r="1.9"/><path d="M5.5 7.3h.01M13.2 5.9h.01M17 11.5h.01" stroke-width="2.6"/></svg>
+    <span class="rail-t">art</span>
+  </a>
+  <a href="#stCalli" data-sect="stCalli" aria-label="Calligraphy">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></svg>
+    <span class="rail-t">calligraphy</span>
+  </a>
+  <a href="#stDance" data-sect="stDance" aria-label="Dance">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+    <span class="rail-t">dance</span>
+  </a>
+  <a href="#stTravel" data-sect="stTravel" aria-label="Places I've kept — travel">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+    <span class="rail-t">travel</span>
+  </a>
+</div>
+<script>
+/* fun rail — highlight the playful section currently in the middle of the screen */
+(function(){
+  var rail = document.getElementById('funRail');
+  if(!rail) return;
+  var links = rail.querySelectorAll('a[data-sect]');
+  var map = {};
+  Array.prototype.forEach.call(links, function(a){ map[a.getAttribute('data-sect')] = a; });
+  var sects = Object.keys(map).map(function(k){ return document.getElementById(k); }).filter(Boolean);
+  if(!('IntersectionObserver' in window) || !sects.length) return;
+  var cur = {}, pickLast = null;
+  function refresh(){
+    var pick = null, best = -1e9;
+    sects.forEach(function(s){
+      if(cur[s.id]){
+        var t = s.getBoundingClientRect().top;
+        if(t > best){ best = t; pick = s.id; }
+      }
+    });
+    if(!pick) pick = pickLast; else pickLast = pick;
+    Array.prototype.forEach.call(links, function(a){
+      a.classList.toggle('on', a.getAttribute('data-sect') === pick);
+    });
+  }
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting) cur[e.target.id] = 1; else delete cur[e.target.id]; });
+    refresh();
+  }, {rootMargin:'-35% 0px -58% 0px', threshold:0});
+  sects.forEach(function(s){ io.observe(s); });
+  Array.prototype.forEach.call(links, function(a){
+    a.addEventListener('click', function(){ pickLast = a.getAttribute('data-sect'); refresh(); });
+  });
+})();
+</script>
+
 <!-- ============ Hero ============ -->
 <header class="hero" id="home">
   <div class="wrap hero-grid">
@@ -1358,7 +1445,7 @@
               <figcaption>gel &amp; prep, two pairs of hands</figcaption>
             </figure>
             <figure>
-              <img src="images/eeg-hardware-talk.jpg" alt="Taking research notes at the lab desk while a classmate works at the computer" style="object-position:50% 0">
+              <img src="images/eeg-hardware-talk.jpg" alt="Emma in a beige hoodie taking research notes on a clipboard across the desk from a colleague — his face covered with a beard emoji filter — in an office with filing cabinets behind them" style="object-position:50% 0">
               <figcaption>hardware talk — a BCI is also a circuit</figcaption>
             </figure>
           </div>
@@ -1453,15 +1540,15 @@
             </div>
             <div class="jb-cap">Fig. 3 — project workflow and paper contribution</div>
           </div>
-          <div class="paper-stamp"><span>CASP — Corpus-Adaptive Symptom Prototype Learning</span><span>IEEE SSCI 2027</span></div>
-          <a class="paper-link" href="papers/casp-ieee-ssci-2027.pdf" target="_blank" rel="noopener" aria-label="Open the CASP paper PDF (IEEE SSCI 2027)">
+          <div class="paper-stamp"><span>CASP — Corpus-Adaptive Symptom Prototype Learning</span><span>Electronics · MDPI</span></div>
+          <a class="paper-link" href="papers/casp-ieee-ssci-2027.pdf" target="_blank" rel="noopener" aria-label="Open the CASP paper PDF (Electronics, MDPI)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
               <path d="M14 3v4h4"/>
               <path d="M9 12.5h6M9 15.5h4"/>
               <path d="M12 20.2l2.6-1.5 1 1.7h-2.4z" fill="var(--accent)" stroke="none"/>
             </svg>
-            <span class="pl-t"><b>read the paper</b><i>CASP · IEEE SSCI 2027 · PDF</i></span>
+            <span class="pl-t"><b>read the paper</b><i>CASP · Electronics (MDPI) · PDF</i></span>
             <span class="pl-arrow" aria-hidden="true">↗</span>
           </a>
         </div>
@@ -1528,6 +1615,7 @@
           <span class="chip">Utterance ownership</span>
           <span class="chip">Faithful expression</span>
           <span class="chip">Actual adoption</span>
+          <span class="chip chip--pub">Published in AJSR</span>
         </div>
         <div class="pub-link">
           <span class="hand">from decoding accuracy to utterance ownership</span>
@@ -2950,7 +3038,7 @@
     </div>
 
     <!-- Calligraphy · BounceCards（React Bits 原生移植，无 React） -->
-    <div class="calli reveal">
+    <div class="calli reveal" id="stCalli">
       <div class="award-sticker award-sticker--trophy"><img src="images/calli-award-trophy.jpg" alt="Crystal trophy — Grand Prize, 3rd Pen & Ink Vanguard Cup national hard-pen calligraphy competition, student division, July 2018" loading="lazy"><span class="award-cap">Grand Prize — 3rd “Pen &amp; Ink Vanguard” Cup national hard-pen calligraphy competition (student division) · 2018</span></div>
       <div class="award-sticker award-sticker--cert"><img src="images/calli-award-cert.jpg" alt="Award certificate — Grand Prize, 3rd Pen & Ink Vanguard Cup national hard-pen calligraphy competition, June 2018" loading="lazy"><span class="award-cap">The matching Grand Prize certificate · June 2018</span></div>
       <div class="calli-head">
@@ -3107,7 +3195,7 @@
     </script>
 
     <!-- Dance -->
-    <div class="dance">
+    <div class="dance" id="stDance">
       <div class="dance-img reveal in d-pop d-pop--lg">
         <img class="dance-cutout" src="images/dance-big.png" alt="A young dancer cut-out in a black top and wide red skirt, bent forward with hands crossed in a classical gesture — decorative sticker">
         <video class="d-pop-vid" src="videos/dance-solo.mp4" muted loop playsinline preload="metadata"></video>
@@ -3238,7 +3326,7 @@
       </div>
     </div>
 
-    <div class="travel">
+    <div class="travel" id="stTravel">
       <div class="travel-head reveal">
         <h3>Places I’ve Kept</h3>
         <span class="hand">travel, because the world is a dataset too</span>
@@ -3298,7 +3386,7 @@
           <div class="chroma-grid" id="chinaChroma" data-reveal="spotlight" aria-label="China photo grid">
             <div class="chroma-grid-inner"></div>
           </div>
-          <p class="hand t-chroma-note">china, every year</p>
+          <p class="hand t-chroma-note">china, family trips every vacation</p>
           <script>
           /* ChromaGrid（React Bits）原生 JS 移植 —— spotlight 光斑下照片逐张恢复彩色。
              想加入旅行照片：改下面 ITEMS 数组即可（image 填 images/xxx.jpg，title/subtitle 填地点与小注） */
